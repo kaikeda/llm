@@ -182,7 +182,7 @@ class RAGEngine:
         retriever = self.create_rag_chain(llm)
         
         # ソースドキュメントの取得
-        source_docs = retriever.get_relevant_documents(question)
+        source_docs = retriever.invoke(question)
         
         # 質問の実行
         answer = self.rag_chain.invoke(question)
