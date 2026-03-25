@@ -1,0 +1,31 @@
+"""
+サンプルドキュメント
+"""
+
+このファイルはLLM Chat APIのサンプルドキュメントです。
+
+## プロジェクトについて
+
+このプロジェクトは、Gemini と Claude を切り替え可能な RAG (Retrieval-Augmented Generation) チャットシステムです。
+
+## 主な機能
+
+1. **複数のLLMモデルのサポート**
+   - Google Gemini
+   - Anthropic Claude
+
+2. **RAG機能**
+   - ドキュメントベースの質問応答
+   - ベクトルデータベースによる高速検索
+
+3. **REST API**
+   - FastAPIによる高速なAPI
+   - 対話的ドキュメント (Swagger UI)
+
+## 使い方
+
+1. データディレクトリにドキュメントを配置
+2. サーバーを起動
+3. APIエンドポイントにリクエストを送信
+
+詳細はREADME.mdを参照してください。
