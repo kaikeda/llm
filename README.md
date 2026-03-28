@@ -70,6 +70,12 @@ CLAUDE_MODEL=claude-3-5-sonnet-20241022
 echo "これはサンプルドキュメントです。" > data/sample.txt
 ```
 
+### 4. ドキュメントの読込
+
+```bash
+python app/reload_documents.py
+```
+
 ## 起動方法
 
 ### 開発サーバーの起動
@@ -77,6 +83,8 @@ echo "これはサンプルドキュメントです。" > data/sample.txt
 ```bash
 # 仮想環境のアクティベート（既にアクティブな場合はスキップ）
 source .venv/bin/activate
+
+uv pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # FastAPIサーバーの起動
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
